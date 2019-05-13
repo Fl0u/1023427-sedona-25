@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Неопознанная сова](https://up.htmlacademy.ru/htmlcss/25/user/1023427).
-* Наставник: `Неизвестно`.
+* Студент: [Евгений Пуховский](https://up.htmlacademy.ru/htmlcss/25/user/1023427)
+* Наставник: [Анна Пономарёва](https://htmlacademy.ru/profile/id153610)
 
 ---
 
