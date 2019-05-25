@@ -44,7 +44,7 @@
         <p>&mdash; &#8470;1 &mdash;</p>
         <p>Седона &mdash; не аттракцион для туристов, там течёт своя жизнь<p>
       </div>
-      <img src="img/city-photo.jpg" width="800" height="256" alt="Фото города">
+      <img src="img/city-photo.jpg" width="800" height="256" alt="Фотография города">
     </div>
     <section class="advantages-list">
       <div class="advantages-item">
@@ -66,7 +66,7 @@
         <p>&mdash; &#8470;2 &mdash;</p>
         <p> Да, по нему можно пройти! Если конечно вы осмелитесь</p>
       </div>
-      <img src="img/bridge-photo.jpg" width="800" height="256" alt="Фото города">
+      <img src="img/bridge-photo.jpg" width="800" height="256" alt="Фотография моста">
     </div>
     <div class="features-item-wrap">
       <div class="feature-item">
@@ -87,26 +87,42 @@
     </div>
     <section class="order">
       <b>Заинтересовались?</b>
-      <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+      <p class="order-info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
       <a href="hotels.html">Поиск гостиницы в Седоне</a>
+      <form class="order-form" action="order.html" method="post">
+        <!--Форма 1-->
+        <p class="appoiment-item">
+          <label for="arrival">Дата заезда:
+          </label>
+          <input id="arrival" type="text" name="arrival date" value="" placeholder="24 апреля 2017">
+        </p>
+        <!--Форма 2-->
+        <p class="appoiment-item">
+          <label for="departure">Дата выезда:
+          </label>
+          <input id="departure" type="text" name="departure date" value="" placeholder="4 июля 2017">
+        </p>
+        <!--Форма 3-->
+        <p class="appoiment-item">
+          <label for="adults">Взрослые:
+          </label>
+          <input id="adults" type="number" name="amount-adults" value="" placeholder="2">
+        </p>
+        <!--Форма 4-->
+        <p class="appoiment-item">
+          <label for="children">Дети:
+          </label>
+          <input id="children" type="number" name="amount-children" value="" placeholder="0">
+        </p>
+      </form>
     </section>
-    <section class="reservation">
-      <p>Дата заезда:
-        <!-- Вставить форму-->
-      </p>
-      <p>Дата выезда:
-        <!-- Вставить форму-->
-      </p>
-      <p>Взрослые:
-        <!-- Вставить форму-->
-      </p>
-      <p>Дети:
-        <!-- Вставить форму-->
-      </p>
-      <span class="button-search">Найти
+    <section class=" reservation">
+      <span class="button-search">
+        <button class="button" type="submit">Найти
+        </button>
       </span>
     </section>
-    <!-- Добавить карту-->
+    <img src="img/map.png" width="1202" height="597" alt="Карта">
   </main>
   <footer class="main-footer">
     <p class="visit">#visitSEDONA</p>
