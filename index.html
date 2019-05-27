@@ -34,9 +34,12 @@
       <img src="img/gorgeous-sedona.svg" width="458" height="352" alt="Добро пожаловать в великолепную Седону">
     </section>
     <section class="about-description">
-      Седона &mdash; небольшой городок в Аризоне, заслуживающий большего
+      <p>Седона &mdash; небольшой городок в Аризоне, заслуживающий большего
+        <p>
     </section>
-    <section class="about-features">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!
+    <section class="about-features">
+      <a>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!
+      </a>
     </section>
     <div class="features-item-wrap">
       <div class="feature-item">
@@ -89,38 +92,42 @@
       <b>Заинтересовались?</b>
       <p class="order-info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
       <a href="hotels.html">Поиск гостиницы в Седоне</a>
-      <form class="order-form" action="order.html" method="post">
+      <form class="order-form" action="search.html" method="post">
         <!--Форма 1-->
-        <p class="appoiment-item">
+        <div class="appoiment-item">
           <label for="arrival">Дата заезда:
           </label>
           <input id="arrival" type="text" name="arrival date" value="" placeholder="24 апреля 2017">
-        </p>
+          <a href="#">
+            <img src="img/calendar.svg" alt="Выбрать дату заезда">
+          </a>
+        </div>
         <!--Форма 2-->
-        <p class="appoiment-item">
+        <div class=" appoiment-item">
           <label for="departure">Дата выезда:
           </label>
           <input id="departure" type="text" name="departure date" value="" placeholder="4 июля 2017">
-        </p>
+          <a href="#">
+            <img src="img/calendar.svg" alt="Выбрать дату отъезда">
+          </a>
+        </div>
         <!--Форма 3-->
-        <p class="appoiment-item">
+        <div class="appoiment-item">
           <label for="adults">Взрослые:
           </label>
           <input id="adults" type="number" name="amount-adults" value="" placeholder="2">
-        </p>
+        </div>
         <!--Форма 4-->
-        <p class="appoiment-item">
+        <div class="appoiment-item">
           <label for="children">Дети:
           </label>
           <input id="children" type="number" name="amount-children" value="" placeholder="0">
-        </p>
+        </div>
+        <section class="button-search">
+          <button class="reservation">Найти
+          </button>
+        </section>
       </form>
-    </section>
-    <section class=" reservation">
-      <span class="button-search">
-        <button class="button" type="submit">Найти
-        </button>
-      </span>
     </section>
     <img src="img/map.png" width="1202" height="597" alt="Карта">
   </main>
@@ -128,19 +135,26 @@
     <p class="visit">#visitSEDONA</p>
     <ul class="footer-social">
       <li>
-        <a class="social-button" href="twitter.svg">Твиттер</a>
+        <a class="social-button" href="#">Твиттер
+        </a>
+        <img src="img/twitter-icon.svg" width="17" height="17" alt="Твиттер">
       </li>
       <li>
-        <a class="social-button" href="facebook.svg">Фейсбук</a>
+        <a class="social-button" href="#">Фейсбук
+        </a>
+        <img src="img/facebook-icon.svg" width="12" height="22" alt="Фейсбук">
       </li>
       <li>
-        <a class="social-button" href="youtube.svg">Ютубе</a>
+        <a class="social-button" href="#">Ютубе
+        </a>
+        <img src="img/youtube-icon.svg" width="20" height="16" alt="Ютубе">
       </li>
     </ul>
     <div class="link">
       <p>Website by</p>
       <a class="footer-copyright">
-        <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="	&copy;"></a>
+        <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Копирайт">
+      </a>
     </div>
   </footer>
 </body>
