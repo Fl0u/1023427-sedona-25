@@ -16,8 +16,8 @@
         <img src="img/index-logo.svg" width="138" height="71" alt="Логотип города Седона">
       </a>
       <ul class="site-navigation">
-        <li>
-          <a href="info.html">Информация</a>
+        <li class="active-page">
+          <a>Информация</a>
         </li>
         <li>
           <a href="media.html">Фото и видео</a>
@@ -33,93 +33,104 @@
   </header>
   <main class="page-content">
     <section class="promo">
+      <!--Отображается надпись Седона. Скрыть-->
       <h1 class="visually-hidden">Седона</h1>
       <img src="img/gorgeous-sedona.svg" width="458" height="352" alt="Добро пожаловать в великолепную Седону">
     </section>
-    <p class="about-description">Седона &mdash; небольшой городок в Аризоне, заслуживающий большего
+    <p class="about-description">Седона &mdash; небольшой городок в Аризоне,
+      <br>заслуживающий большего
       <p>
-        <section class="about-features">
+        <section class="features">
           <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!
           </p>
         </section>
-        <ol class="features-item-wrap">
+        <ol class="features-list">
           <!--1 причина-->
-          <li class="feature-item">
-            <h2>Настоящий городок</h2>
-            <p>&mdash; &#8470;1 &mdash;</p>
-            <p>Седона &mdash; не аттракцион для туристов, там течёт своя жизнь<p>
-                <img src="img/city-photo.jpg" width="800" height="256" alt="Фотография города">
+          <li class="feature-item-blue">
+            <h2>Настоящий
+              <br> городок</h2>
+            <p class="feature-item-detail">&mdash; &#8470;1 &mdash;</p>
+            Седона &mdash; не аттракцион для туристов,
+            <br>там течёт своя жизнь<p>
+              <img src="img/city-photo.jpg" width="800" height="256" alt="Фотография города">
+              <ul class="advantages-list">
+                <li class="advantages-item">
+                  <b>Жильё</b>
+                  <p class="advantages-item-detail">Рекомендуем пожить в настоящем
+                    <br>мотеле, всё как в кино!</p>
+                </li>
+                <li class="advantages-item">
+                  <b>Еда</b>
+                  <p class="advantages-item-detail">Всегда заказывайте фирменный бургер,
+                    <br>вы не разочаруетесь!</p>
+                </li>
+                <li class="advantages-item">
+                  <b>Сувениры</b>
+                  <p class="advantages-item-detail">Не только китайского, но и местного
+                    <br>производства</p>
+                </li>
+              </ul>
           </li>
-          <ul class="advantages-list">
-            <li class="advantages-item">
-              <b>Жильё</b>
-              <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-            </li>
-            <li class="advantages-item">
-              <b>Еда</b>
-              <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-            </li>
-            <li class="advantages-item">
-              <b>Сувениры</b>
-              <p>Не только китайского, но и местного производства</p>
-            </li>
-          </ul>
           <!--2 причина-->
-          <li class="feature-item">
+          <li class="feature-item-blue">
             <h2>Там есть  Мост дьявола</h2>
-            <p>&mdash; &#8470;2 &mdash;</p>
-            <p> Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-            <img src="img/bridge-photo.jpg" width="800" height="256" alt="Фотография моста">
+            <p class="feature-item-detail">&mdash; &#8470;2 &mdash;<p>
+ <p>Да, по нему можно пройти! Если конечно
+                  <br> вы осмелитесь</p>
+                <img src="img/bridge-photo.jpg" width="800" height="256" alt="Фотография моста">
           </li>
           <!--3 причина-->
-          <li class="feature-item">
+          <li class="feature-item-grey">
             <h2>Небольшая  площадь</h2>
-            <p>&mdash; &#8470;3 &mdash;</p>
-            <p>  Все достопримечательности находятся очень близко</p>
+            <p class="feature-item-detail">&mdash; &#8470;3 &mdash;</p>
+            <p>  Все достопримечательности
+              <br> находятся очень близко</p>
           </li>
           <!--4 причина-->
-          <li class="feature-item">
+          <li class="feature-item-grey">
             <h2>Красивая  дорога</h2>
- <p>&mdash; &#8470;4 &mdash;</p>
-            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+ <p class="feature-item-detail">&mdash; &#8470;4 &mdash;<p>
+                <p>Ехать в Седону из Лас-Вегаса совсем
+                  <br> не скучно!</p>
           </li>
           <!--5 причина-->
-          <li class="feature-item">
+          <li class="feature-item-grey">
             <h2>Мало  туристов</h2>
-            <p>&mdash; &#8470;5 &mdash;</p>
-            <p>  Большинство едет в гранд каньон и толпится там<p>
+            <p class="feature-item-detail">&mdash; &#8470;5 &mdash;<p>
+                <p>  Большинство едет в гранд каньон 
+                  <br>и толпится там<p>
           </li>
         </ol>
         <section class="order">
           <b>Заинтересовались?</b>
-          <p class="order-info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <dialog open>Поиск гостиницы в Седоне
+          <p class="order-info">Укажите предполагаемые даты поездки,
+            <br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <div class="hotel-search-form">
+            <a class="search-button">Поиск гостиницы в Седоне</a>
             <form class="order-form" action="https://echo.htmlacademy.ru" method="post">
               <!--Форма 1-->
               <div class="appoiment-item">
                 <label for="arrival">Дата заезда:
                 </label>
-                <input id="arrival" type="text" name="arrival date" value="" placeholder="24 апреля 2017">
-                <button type="button" name="calendar">
-                  <img src="img/calendar.svg" alt="Выбрать дату отъезда">
+                <input class="field-input" id="arrival" type="text" name="arrival date" value="" placeholder="24 апреля 2017">
+                <button type="button" name="calendar">Календарь
                 </button>
               </div>
               <!--Форма 2-->
               <div class=" appoiment-item">
                 <label for="departure">Дата выезда:
                 </label>
-                <input id="departure" type="text" name="departure date" value="" placeholder="4 июля 2017">
-                <button type="button" name="calendar">
-                  <img src="img/calendar.svg" alt="Выбрать дату отъезда">
+                <input class="field-input" id="departure" type="text" name="departure date" value="" placeholder="4 июля 2017">
+                <button type="button" name="calendar">Календарь
                 </button>
               </div>
               <!--Форма 3-->
               <div class="appoiment-item half-width">
                 <label for="adults">Взрослые:
                 </label>
-                <button type="button" name="less">+
+                <button type="button" name="less">-
                 </button>
-                <input id="adults" type="number" name="amount-adults" value="" placeholder="2" min="1" max="9">
+                <input class="field-input half-width" id="adults" type="number" name="amount-adults" value="" placeholder="2">
                 <button type="button" name="more">+
                 </button>
               </div>
@@ -129,49 +140,41 @@
                 </label>
                 <button type="button" name="less">-
                 </button>
-                <input id="children" type="number" name="amount-children" value="" placeholder="0" min="0" max="9">
+                <input class="field-input half-width" id="children" type="number" name="amount-children" value="" placeholder="0">
                 <button type="button" name="more">+
                 </button>
               </div>
-<button class="reservation" type="submit">Найти
-</button>
-</form>
-          </dialog>
+              <button class="reservation" type="submit">Найти
+              </button>
+            </form>
+          </div>
         </section>
         <section class="map">
           <img src="img/map.png" width="1200" height="597" alt="Карта">
         </section>
   </main>
   <footer class="page-footer">
-    <p class="hashtag">#visitSEDONA</p>
+    <p class="hashtag">#VISITSEDONA</p>
     <ul class="footer-social">
       <li>
         <a class="social-button" href="#">Твиттер
         </a>
-        <!--
-        <img src="img/twitter-icon.svg" width="17" height="17" alt="Твиттер">
-      -->
       </li>
       <li>
         <a class="social-button" href="#">Фейсбук
         </a>
-        <!--
-        <img src="img/facebook-icon.svg" width="12" height="22" alt="Фейсбук">
-      -->
       </li>
       <li>
         <a class="social-button" href="#">Ютубе
         </a>
-        <!--
-        <img src="img/youtube-icon.svg" width="20" height="16" alt="Ютубе">
-      -->
       </li>
     </ul>
     <div class="link">
-      <p>Website by</p>
-      <a class="footer-copyright" href="https://htmlacademy.ru" target="_blank">
-        <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Копирайт">
-      </a>
+      <p>Website by
+        <a class="footer-copyright" href="https://htmlacademy.ru" target="_blank">
+          <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Копирайт">
+        </a>
+      </p>
     </div>
   </footer>
 </body>
