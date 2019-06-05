@@ -10,7 +10,7 @@ body {
   color: #000000;
   text-align: center;
   text-transform: uppercase;
-  background-color: rgba(0, 0, 0, 0);
+  /*background-color: rgba(0, 0, 0, 0);*/
   background-image: url("img/bg.jpg");
   background-position: top center;
   background-repeat: no-repeat;
@@ -29,6 +29,7 @@ a {
   line-height: 26px;
   color: #000000;
   background-color: rgba(0, 0, 0, 0);
+  line-height: 1.86;
 }
 
 .site-navigation {
@@ -67,8 +68,9 @@ a {
   font-size: 14px;
   line-height: 26px;
   line-height: 1.86;
+  color: #333333;
 }
-
+  /*--1 причина--......>*/
 .features-list {
   list-style: none;
   font-size: 14px;
@@ -80,13 +82,14 @@ h2 {
   font-size: 21px;
   font-weight: bold;
 }
-
-.feature-item wide {
-  background-color: #81B3D2;
-}
-
-.feature-item grey {
+/*Если потребуется, как задавать свойста классам "feature-item grey"? Класс с пробелом*/
+.grey {
   background-color: #F2F2F2;
+}
+/*Акцентировать голубой фон только на Wide. Без вложенного списка */
+.wide {
+color: #ffffff;
+background-color: #81b3d2;
 }
 
 /*Седона - не аттракцион для туристов, там течёт своя жизнь<*/
@@ -97,14 +100,12 @@ h2 {
 .advantages-list {
   list-style: none;
   line-height: 1.5;
+  color: #000000;
   background-color: #ffffff;
 }
 
 /*Вставить иконки svg>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 /*Жильё, еда, сувениры*/
-.picture {
-  background-image: url("house-icon.svg");
-}
 
 .advantages-item {
   font-size: 21px;
@@ -114,6 +115,8 @@ h2 {
 .advantages-item-detail {
   font-size: 14px;
   font-weight: normal;
+  line-height: 24px;
+  color: #333333;
 }
 
 .order {
@@ -133,7 +136,7 @@ h2 {
 }
 
 /*Поиск гостиницы в Седоне*/
-.search-button {
+.hotel-search {
   font-size: 21px;
   line-height: 1.24;
   color: #ffffff;
@@ -145,6 +148,10 @@ h2 {
 .appoiment-item half-width {
   font-size: 14px;
   line-height: 1.86
+}
+
+.field-input {
+background-color: #f2f2f2;
 }
 
 /*Найти*/
