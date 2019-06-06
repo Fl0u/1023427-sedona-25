@@ -1,5 +1,7 @@
 /*Вставить фоновые изображения*/
-/*Не подключилось фонове изображение .jpg*/
+/*Не подключилось фоновое изображение .jpg*/
+/*Добавить маску*/
+/*Удалить стандартную обводку рамок*/
 /*index.html*/
 body {
   margin: 0;
@@ -56,6 +58,10 @@ a {
   background-color: #000000
 }
 
+h1 {
+  visibility: hidden;
+}
+
 /*Седона - небольшой городок в Аризоне, заслуживающий большего*/
 .about-description {
   font-size: 21px;
@@ -70,7 +76,8 @@ a {
   line-height: 1.86;
   color: #333333;
 }
-  /*--1 причина--......>*/
+
+/*--1 причина--......>*/
 .features-list {
   list-style: none;
   font-size: 14px;
@@ -82,14 +89,16 @@ h2 {
   font-size: 21px;
   font-weight: bold;
 }
+
 /*Если потребуется, как задавать свойста классам "feature-item grey"? Класс с пробелом*/
 .grey {
   background-color: #F2F2F2;
 }
+
 /*Акцентировать голубой фон только на Wide. Без вложенного списка */
 .wide {
-color: #ffffff;
-background-color: #81b3d2;
+  color: #ffffff;
+  background-color: #81b3d2;
 }
 
 /*Седона - не аттракцион для туристов, там течёт своя жизнь<*/
@@ -104,8 +113,27 @@ background-color: #81b3d2;
   background-color: #ffffff;
 }
 
-/*Вставить иконки svg>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
-/*Жильё, еда, сувениры*/
+/*Жильё, еда, сувениры. Не отображаются*/
+/*Жильё*/
+.house-icon {
+  background-image: url("house-icon.svg");
+  width: 75px;
+  height: 72px;
+}
+
+/*Еда*/
+.food-icon {
+  background-image: url("food-icon.svg");
+  width: 75px;
+  height: 70px;
+}
+
+/*Сувениры*/
+.souvenirs-icon {
+  background-image: url("souvenirs-icon.svg");
+  width: 64px;
+  height: 76px;
+}
 
 .advantages-item {
   font-size: 21px;
@@ -143,6 +171,17 @@ background-color: #81b3d2;
   background-color: #766357;
 }
 
+.hotel-search:hover {
+  background-color: #604e43
+}
+
+/*Неверно отображается цвет при нажатии*/
+.hotel-search:focus {
+  background-color: #503e33;
+  color: #ffffff;
+  opacity: .3;
+}
+
 /*Дата заезда; дата выезда, взрослые, дети*/
 .appoiment-item,
 .appoiment-item half-width {
@@ -151,10 +190,10 @@ background-color: #81b3d2;
 }
 
 .field-input {
-background-color: #f2f2f2;
+  background-color: #f2f2f2;
 }
 
-/*Найти*/
+/*Найти. Убрать стандартную обводку*/
 .reservation {
   font-size: 21px;
   line-height: 1.24;
@@ -162,8 +201,44 @@ background-color: #f2f2f2;
   background-color: #81b3d2;
 }
 
+.reservation:hover {
+  background-color: #669ec0;
+}
+/*Что-то с прозрачностью*/
+.reservation:focus {
+  background-color: #5496bd;
+  opacity: .3;
+}
+
+.calendar {
+  background-image: url("calendar.svg");
+  width: 21px;
+  height: 22px;
+}
+
 .footer-social {
   list-style: none;
+}
+
+.twitter-icon {
+  visibility: hidden;
+  background-image: url("twitter-icon.svg");
+  width: 17px;
+  height: 17px;
+}
+
+.facebook-icon {
+  visibility: hidden;
+  background-image: url("facebook-icon.svg");
+  width: 12px;
+  height: 22px;
+}
+
+.youtube-icon {
+  visibility: hidden;
+  background-image: url("youtube-icon.svg");
+  width: 20px;
+  height: 16px;
 }
 
 /*holels.html*/
