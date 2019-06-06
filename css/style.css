@@ -194,18 +194,18 @@ h2 {
 }
 
 /*Найти. Убрать стандартную обводку*/
-.reservation {
+.find {
   font-size: 21px;
   line-height: 1.24;
   color: #ffffff;
   background-color: #81b3d2;
 }
 
-.reservation:hover {
+.find:hover {
   background-color: #669ec0;
 }
 /*Что-то с прозрачностью*/
-.reservation:focus {
+.find:focus {
   background-color: #5496bd;
   opacity: .3;
 }
@@ -221,24 +221,59 @@ h2 {
 }
 
 .twitter-icon {
-  visibility: hidden;
-  background-image: url("twitter-icon.svg");
+  background: url("twitter-icon.svg");
   width: 17px;
   height: 17px;
 }
 
 .facebook-icon {
-  visibility: hidden;
-  background-image: url("facebook-icon.svg");
+  background: url("facebook-icon.svg");
   width: 12px;
   height: 22px;
 }
 
 .youtube-icon {
-  visibility: hidden;
-  background-image: url("youtube-icon.svg");
+  background: url("youtube-icon.svg");
   width: 20px;
   height: 16px;
 }
 
 /*holels.html*/
+.catalog-list
+.item-result {
+  list-style: none;
+}
+
+
+.more {
+color: #ffffff;
+background-color:  #A8937D;
+}
+
+.more:hover {
+ background-color: #604e43;}
+
+.more:focus {
+ background-color: #503e33;
+ opacity: 0.3;
+}
+
+.reservation {
+  color: #ffffff;
+ background-color: #81b3d2;
+}
+
+
+.reservation:hover {
+background-color: #669ec0;
+}
+
+.reservation:focus {
+background-color: #5496bd;
+opacity: 0.3;
+}
+
+.rating {
+color: #666666;
+ background-color: #f2f2f2;
+}
