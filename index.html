@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <title>Sedona</title>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+
+
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -54,7 +56,8 @@
                 <img src="img/city-photo.jpg" width="800" height="256" alt="Фотография города">
                 <ul class="advantages-list">
                   <li class="advantages-item">
-                    <div class="house-icon"></div>                    <b>Жильё</b>
+                    <div class="house-icon"></div>
+                    <b>Жильё</b>
                     <p class="advantages-item-detail">Рекомендуем пожить в настоящем
                       мотеле, всё как в кино!</p>
                   </li>
@@ -116,7 +119,7 @@
                 </label>
                 <input class="field-input" id="arrival" type="text" name="arrival date" value="" placeholder="24 апреля 2017">
                 <!--Возможно, нужно задать класс button-->
-                <button type="button" name="calendar">Календарь
+                <button class="calendar" type="button" name="calendar">Календарь
                 </button>
               </div>
               <!--Форма 2-->
@@ -131,7 +134,7 @@
               <div class="appoiment-item half-width">
                 <label for="adults">Взрослые:
                 </label>
-                <button type="button" name="less">-
+                <button class="less" type="button" name="less">-
                 </button>
                 <input class="field-input half-width" id="adults" type="number" name="amount-adults" value="" placeholder="2">
                 <button type="button" name="more">+

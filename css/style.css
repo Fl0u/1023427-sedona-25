@@ -1,5 +1,4 @@
-/*Вставить фоновые изображения*/
-/*Не подключилось фоновое изображение .jpg*/
+/*Не доделаны .hover и .active*/
 /*Добавить маску*/
 /*Удалить стандартную обводку рамок*/
 /*index.html*/
@@ -9,11 +8,10 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 14px;
   line-height: 21px;
-  color: #000000;
   text-align: center;
   text-transform: uppercase;
-  /*background-color: rgba(0, 0, 0, 0);*/
-  background-image: url("img/bg.jpg");
+  background-color: #ffffff;
+  background-image: url("../img/bg.jpg");
   background-position: top center;
   background-repeat: no-repeat;
 }
@@ -30,7 +28,6 @@ a {
   font-size: 14px;
   line-height: 26px;
   color: #000000;
-  background-color: rgba(0, 0, 0, 0);
   line-height: 1.86;
 }
 
@@ -49,13 +46,8 @@ a {
   opacity: .3;
 }
 
-/*Подумать, как выделить ?класс? "active" коричневым, чтобы он не наследовал цвет от родителя*/
 .active-page a {
   color: #766357;
-}
-
-.promo {
-  background-color: #000000
 }
 
 h1 {
@@ -96,7 +88,7 @@ h2 {
 }
 
 /*Акцентировать голубой фон только на Wide. Без вложенного списка */
-.wide {
+.feature-item.wide {
   color: #ffffff;
   background-color: #81b3d2;
 }
@@ -116,21 +108,21 @@ h2 {
 /*Жильё, еда, сувениры. Не отображаются*/
 /*Жильё*/
 .house-icon {
-  background-image: url("house-icon.svg");
+  background-image: url("../img/house-icon.svg");
   width: 75px;
   height: 72px;
 }
 
 /*Еда*/
 .food-icon {
-  background-image: url("food-icon.svg");
+  background-image: url("../img/food-icon.svg");
   width: 75px;
   height: 70px;
 }
 
 /*Сувениры*/
 .souvenirs-icon {
-  background-image: url("souvenirs-icon.svg");
+  background-image: url("../img/souvenirs-icon.svg");
   width: 64px;
   height: 76px;
 }
@@ -183,8 +175,7 @@ h2 {
 }
 
 /*Дата заезда; дата выезда, взрослые, дети*/
-.appoiment-item,
-.appoiment-item half-width {
+.appoiment-item.half-width {
   font-size: 14px;
   line-height: 1.86
 }
@@ -204,6 +195,7 @@ h2 {
 .find:hover {
   background-color: #669ec0;
 }
+
 /*Что-то с прозрачностью*/
 .find:focus {
   background-color: #5496bd;
@@ -211,69 +203,76 @@ h2 {
 }
 
 .calendar {
-  background-image: url("calendar.svg");
+  background-color: #f2f2f2;
+  background-image: url("../img/calendar.svg");
   width: 21px;
-  height: 22px;
+  height: 23px;
+  font-size: 0;
 }
+
+calendar:hover {}
+
+calendar:focus {}
 
 .footer-social {
   list-style: none;
 }
 
 .twitter-icon {
-  background: url("twitter-icon.svg");
+  background-color: #81b3d2;
+  background-image: url("../img/twitter-icon.svg");
   width: 17px;
   height: 17px;
 }
 
 .facebook-icon {
-  background: url("facebook-icon.svg");
+  background-color: #81b3d2;
+  background-image: url("../img/facebook-icon.svg");
   width: 12px;
   height: 22px;
 }
 
 .youtube-icon {
-  background: url("youtube-icon.svg");
+  background-color: #81b3d2;
+  background-image: url("../img/youtube-icon.svg");
   width: 20px;
   height: 16px;
 }
 
 /*holels.html*/
-.catalog-list
-.item-result {
+.catalog-list .item-result {
   list-style: none;
 }
 
-
 .more {
-color: #ffffff;
-background-color:  #A8937D;
+  color: #ffffff;
+  background-color: #A8937D;
 }
 
 .more:hover {
- background-color: #604e43;}
+  background-color: #604e43;
+}
 
 .more:focus {
- background-color: #503e33;
- opacity: 0.3;
+  background-color: #503e33;
+  opacity: 0.3;
 }
 
 .reservation {
   color: #ffffff;
- background-color: #81b3d2;
+  background-color: #81b3d2;
 }
 
-
 .reservation:hover {
-background-color: #669ec0;
+  background-color: #669ec0;
 }
 
 .reservation:focus {
-background-color: #5496bd;
-opacity: 0.3;
+  background-color: #5496bd;
+  opacity: 0.3;
 }
 
 .rating {
-color: #666666;
- background-color: #f2f2f2;
+  color: #666666;
+  background-color: #f2f2f2;
 }
