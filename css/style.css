@@ -1,6 +1,4 @@
-/*Не доделаны .hover и .active*/
 /*Добавить маску*/
-/*Удалить стандартную обводку рамок*/
 /*index.html*/
 body {
   margin: 0;
@@ -10,7 +8,7 @@ body {
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
-  background-color: #f2f2f2f2;
+  background-color: #ffffff;
 }
 
 .page-wrapper {
@@ -18,6 +16,7 @@ body {
   text-align: center;
   margin: 0;
 }
+
 a {
   text-decoration: none;
 }
@@ -25,6 +24,10 @@ a {
 p {
   margin: 0;
   padding: 0;
+}
+
+.catalog-list {
+  list-style: none;
 }
 
 .site-navigation a {
@@ -37,19 +40,18 @@ p {
   font-weight: bold;
 }
 
-.site-navigation a:focus {
+.site-navigation a:hover {
   color: #81B3D2;
 }
 
 .site-navigation a:active {
-  color: #000000;
-  color: rgba(255, 255, 255, 0.3);
-
+  color: #b2b2b2b2;
 }
 
-/* Улетают изображения и выделение текста .wide??????????
-.active-page {
-  color: #766357;*/
+.active-page li {
+  color: #766357;
+}
+
 .main-navigation {
   font-size: 14px;
   line-height: 26px;
@@ -59,7 +61,7 @@ p {
 
 .promo {
   background-image: url("../img/bg.jpg");
-  background-position: center;
+  background-position: top center;
   width: 1200px;
   height: 800px;
   border: solid 1px #b36565;
@@ -115,6 +117,18 @@ h2 {
   font-size: 14px;
 }
 
+.city {
+  width: 800px;
+  height: 256px;
+  overflow: hidden;
+}
+
+.bridge {
+  width: 800px;
+  height: 256px;
+  overflow: hidden;
+}
+
 .advantages-list {
   list-style: none;
   line-height: 1.5;
@@ -124,6 +138,10 @@ h2 {
   padding: 0;
 }
 
+.advantages-item {
+  margin: 0;
+  padding: 0;
+}
 
 /*Жильё*/
 .advantages-item.house {
@@ -184,7 +202,7 @@ h2 {
   background-color: #766357;
 }
 
-.hotel-search:focus {
+.hotel-search:hover {
   background-color: #604e43
 }
 
@@ -192,7 +210,6 @@ h2 {
   background-color: #503e33;
   color: #ffffff;
   color: rgba(255, 255, 255, 0.3);
-
 }
 
 /*Дата заезда; дата выезда, взрослые, дети*/
@@ -201,8 +218,20 @@ h2 {
   line-height: 1.86
 }
 
+input, button {
+  outline: none;
+}
+
 .field-input {
   background-color: #f2f2f2;
+}
+
+.field-input:hover {
+  background-color: #EBEBEB;
+}
+
+.field-input:focus {
+  background-color: #FFFFFF;
 }
 
 /*Найти. Убрать стандартную обводку*/
@@ -213,57 +242,78 @@ h2 {
   background-color: #81b3d2;
 }
 
-
 .find:hover {
   background-color: #669ec0;
 }
 
 /*Что-то с прозрачностью*/
 .find:active {
-background-color: #5496bd;
-color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
 }
 
-.calendar {
-  background-color: #f2f2f2;
-  background-image: url("../img/calendar.svg");
-  width: 21px;
-  height: 23px;
+.calendar svg {
+  fill: #f2f2f2;
   font-size: 0;
 }
 
+.calendar:hover svg {
+  fill: #000000;
+}
+
+.calendar:active svg {
+  fill: #81B3D2;
+}
+
+.map {
+  width: 1200px;
+  height: 597px;
+  overflow: hidden;
+}
 
 .footer-social {
   list-style: none;
 }
 
+/*  .social-link {} */
 .twitter {
   display: block;
-  background-color: #81b3d2;
   background-image: url("../img/twitter-icon.svg");
-  width: 17px;
-  height: 17px;
+  width: 46px;
+  height: 48px;
   font-size: 0;
 }
 
 .facebook {
   display: block;
-  background-color: #81b3d2;
   background-image: url("../img/facebook-icon.svg");
-  width: 12px;
-  height: 22px;
+  width: 47px;
+  height: 48px;
   font-size: 0;
+}
 
+.twitter, .facebook, .youtube {
+  background-color: #81b3d2;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.twitter:hover, .facebook:hover, .youtube:hover {
+  background-color: #669EC0;
+}
+
+.twitter:active, .facebook:active, .youtube:active {
+  background-color: #5496BD;
+  color: #ffffff;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .youtube {
   display: block;
-  background-color: #81b3d2;
   background-image: url("../img/youtube-icon.svg");
-  width: 20px;
-  height: 16px;
+  width: 46px;
+  height: 48px;
   font-size: 0;
-
 }
 
 /*holels.html*/
@@ -271,37 +321,77 @@ color: rgba(255, 255, 255, 0.3);
   list-style: none;
 }
 
-.more {
-  color: #ffffff;
-  background-color: #A8937D;
+.more, .less {
+  color: #A9A9A9;
 }
 
-.more:focus {
-  background-color: #604e43;
+.more:hover, .less:hover {
+  color: #000000;
 }
 
-.more:active {
-  background-color: #503e33;
-color: rgba(255, 255, 255, 0.3);
-
+.more:active, .less:active {
+  color: #81B3D2;
 }
 
 .reservation {
   color: #ffffff;
-  background-color: #81b3d2;
+  background-color: #766357;
 }
 
-.reservation:focus {
-  background-color: #669ec0;
+.reservation:hover {
+  background-color: #604E43;
 }
 
 .reservation:active {
-  background-color: #5496bd;
+  background-color: #503E33;
   color: rgba(255, 255, 255, 0.3);
-
 }
 
-/*
-  .rating {
-    color: #666666;
-*/
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.hotel-title a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.hotel-title:hover a {
+  color: #81B3D2;
+}
+
+.hotel-title:active a {
+  color: rgba(178, 178, 178, 0.3);
+}
+
+.detail {
+  color: #FFFFFF;
+  background-color: #81B3D2;
+}
+
+.detail:hover {
+  background-color: #669EC0;
+}
+
+.detail:active {
+  color: rgba(135, 181, 208, 0.3);
+  background-color: #5496BD;
+}
+
+.visually-hidden {
+  font-size: 0;
+}
+
+.rating {
+  color: #666666;
+  background-color: #f2f2f2;
+}
+
+.rating-star {
+  font-size: 0;
+  background-image: url("../img/star.svg");
+  background-repeat: repeat-x;
+  width: 19px;
+  height: 17px;
+}
