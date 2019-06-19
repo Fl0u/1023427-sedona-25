@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Евгений Пуховский](https://up.htmlacademy.ru/htmlcss/25/user/1023427)
-* Наставник: [Анна Пономарёва](https://htmlacademy.ru/profile/id153610)
+* Студент: [Евгений Пуховский](https://htmlacademy.ru/profile/id1023427)
+* Наставник: [Вадим Новаш](https://htmlacademy.ru/profile/id8589)
 
 ---
 
