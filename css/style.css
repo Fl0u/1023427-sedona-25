@@ -1,23 +1,21 @@
 /*Добавить маску*/
 /*index.html*/
 body {
-  width: 1200px;
-  height: 800px;
   margin: 0;
   padding: 0;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
-  background-color: #ffffff;
+  background-color: #F2F2F2;
 }
 
 .page-wrapper {
-  color: #f2f2f2;
+  border-color: #ffffff;
   width: 1200px;
   text-align: center;
-  margin: 0;
+  margin: 0 auto;
 }
 
 a {
@@ -33,25 +31,23 @@ p {
   list-style: none;
 }
 
-.site-navigation a {
-  color: #000000;
-}
-
 .site-navigation {
-  list-style: none;
-  color: #000000;
   font-weight: bold;
 }
 
-.site-navigation a:hover {
+.item a {
+  color: #000000;
+}
+
+.item a:hover {
   color: #81B3D2;
 }
 
-.site-navigation a:active {
+.item a:active {
   color: #b2b2b2b2;
 }
 
-.active-page li {
+.current a {
   color: #766357;
 }
 
@@ -356,6 +352,8 @@ h3 {
 }
 
 .hotel-title a {
+  font-size: 21px;
+  line-height: 1.24;
   color: #000000;
   text-decoration: none;
 }
@@ -378,23 +376,25 @@ h3 {
 }
 
 .detail:active {
-  color: rgba(135, 181, 208, 0.3);
   background-color: #5496BD;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .visually-hidden {
   font-size: 0;
 }
 
-.rating {
+.rating-star {
   color: #666666;
+  font-size: 0;
   background-color: #f2f2f2;
+  background-image: url("../img/star.svg");
+  background-repeat: space;
+  width: 88px;
+  height: 17px;
 }
 
-.rating-star {
-  font-size: 0;
-  background-image: url("../img/star.svg");
-  background-repeat: repeat-x;
-  width: 19px;
-  height: 17px;
+.fourstars {
+  width: 88px;
+
 }
