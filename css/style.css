@@ -31,11 +31,6 @@ p {
   list-style: none;
 }
 
-.site-navigation {
-  font-weight: bold;
-  list-style: none;
-}
-
 .item a {
   color: #000000;
 }
@@ -53,12 +48,57 @@ p {
 }
 
 .main-navigation {
+  display: flex;
   font-size: 14px;
   line-height: 26px;
+  height: 56px;
   color: #000000;
   line-height: 1.86;
+  align-items: center;
 }
 
+.main-navigation.logo {
+  align-self: center;
+  width: 244px;
+  height: 56px;
+}
+
+.site-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-weight: bold;
+  list-style: none;
+  width: 1200px;
+  align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+.item {
+
+}
+.item1 {
+  order: 1;
+}
+.item2 {
+  order: 2;
+}
+.item4 {
+  order: 4;
+}
+.item5 {
+  order: 5;
+}
+.site-navigation .logo {
+  order:
+    align-self: center;
+  float: inherit;
+  width: 244px;
+  height: 56px;
+}
+*/
 .promo {
   background-image: url("../img/bg.jpg");
   background-position: top center;
@@ -74,15 +114,24 @@ h1 {
 
 /*Седона - небольшой городок в Аризоне, заслуживающий большего*/
 .about-description {
+  width: 470px;
+  height: 81px;
   font-size: 21px;
   font-weight: bold;
   line-height: 1.24;
-  margin: 0;
+  margin: 365px;
+  margin-top: 58.5px;
+  margin-bottom: 0;
   padding: 0;
 }
 
 /*Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!*/
 .features {
+  width: 519px;
+  min-height: 26px;
+  margin-left: 340px;
+  margin-right: 341px;
+  margin-bottom: 51px;
   font-size: 14px;
   line-height: 26px;
   line-height: 1.86;
@@ -91,11 +140,22 @@ h1 {
 
 /*--1 причина--......>*/
 .features-list {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
   list-style: none;
   font-size: 14px;
   line-height: 1.5;
   margin: 0;
   padding: 0;
+}
+
+.features-list.reason1 {
+  align-items: flex-start;
+}
+
+.features-list.reason5 {
+  align-items: flex-end;
 }
 
 /*Там есть  Мост дьявола*/
@@ -110,6 +170,12 @@ h2 {
 .feature-item.wide {
   color: #ffffff;
   background-color: #81b3d2;
+  min-height: 162.5px;
+  width: 310px;
+  margin-top: 41.5px;
+  margin-bottom: 52px;
+  margin-left: 18px;
+  margin-right: 72px;
 }
 
 /*Седона - не аттракцион для туристов, там течёт своя жизнь<*/
