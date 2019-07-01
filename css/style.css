@@ -1,42 +1,44 @@
 /*Добавить маску*/
 /*index.html*/
 body {
-  margin: 0;
-  padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
+  min-width: 1280px;
+  min-height: 2762px;
+  margin: 0;
+  padding: 0;
   text-align: center;
   text-transform: uppercase;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .page-wrapper {
-  border-color: #ffffff;
-  width: 1200px;
-  text-align: center;
+  /* width: 1200px; */
   margin: 0 auto;
+  text-align: center;
+  border-color: #fff;
 }
 
 a {
   text-decoration: none;
 }
 
-p {
-  margin: 0;
-  padding: 0;
-}
-
 .catalog-list {
   list-style: none;
 }
 
+.item {
+  width: 239px;
+  min-height: 56px;
+}
+
 .item a {
-  color: #000000;
+  color: #000;
 }
 
 .item a:hover {
-  color: #81B3D2;
+  color: #81b3d2;
 }
 
 .item a:active {
@@ -47,58 +49,59 @@ p {
   color: #766357;
 }
 
-.main-navigation {
-  display: flex;
-  font-size: 14px;
-  line-height: 26px;
-  height: 56px;
-  color: #000000;
-  line-height: 1.86;
-  align-items: center;
+.page-header {
+  margin-bottom: 109px;
 }
 
-.main-navigation.logo {
-  align-self: center;
-  width: 244px;
-  height: 56px;
+.main-navigation {
+  align-items: center;
+  color: #000000;
+  display: flex;
+  font-size: 14px;
+  line-height: 1.86;
+  line-height: 26px;
+  margin-bottom: 76px;
+  min-height: 71px;
+  width: 1200px;
 }
 
 .site-navigation {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   font-weight: bold;
+  justify-content: space-between;
   list-style: none;
-  width: 1200px;
-  align: center;
   margin: 0;
+  min-height: 56px;
   padding: 0;
 }
 
-/*
-.item {
+/* .item1 {
+  order: 0;
+}
 
-}
-.item1 {
-  order: 1;
-}
 .item2 {
+  order: 1;
+} */
+.logo-container {
   order: 2;
-}
-.item4 {
-  order: 4;
-}
-.item5 {
-  order: 5;
-}
-.site-navigation .logo {
-  order:
-    align-self: center;
-  float: inherit;
   width: 244px;
   height: 56px;
 }
-*/
+
+/* .item3 {
+  order: 3;
+}
+
+.item4 {
+  order: 4;
+} */
+.promo {
+  margin-top: 76px;
+  margin-bottom: 139px;
+}
+
+/* Скрыл фоновое изображение для удобства. Это не промо. Бэкграунд.
 .promo {
   background-image: url("../img/bg.jpg");
   background-position: top center;
@@ -107,75 +110,98 @@ p {
   border: solid 1px #b36565;
   text-align: center;
 }
-
+*/
+/* После фона вставить картинку page-wrapper */
 h1 {
   visibility: hidden;
 }
 
 /*Седона - небольшой городок в Аризоне, заслуживающий большего*/
 .about-description {
-  width: 470px;
-  height: 81px;
   font-size: 21px;
   font-weight: bold;
   line-height: 1.24;
-  margin: 365px;
-  margin-top: 58.5px;
-  margin-bottom: 0;
+  display: inline-block;
+  width: 470px;
+  min-height: 48px;
+  margin-top: 139px;
+  margin-bottom: 33px;
   padding: 0;
+  text-align: center;
 }
 
 /*Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!*/
-.features {
+/*.features {
+  display: flex;
+
+  text-align: center;
   width: 519px;
   min-height: 26px;
-  margin-left: 340px;
-  margin-right: 341px;
   margin-bottom: 51px;
   font-size: 14px;
   line-height: 26px;
   line-height: 1.86;
   color: #333333;
 }
-
-/*--1 причина--......>*/
-.features-list {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  list-style: none;
+*/
+.about-features {
   font-size: 14px;
-  line-height: 1.5;
-  margin: 0;
-  padding: 0;
+  line-height: 1.86;
+  width: 519px;
+  min-height: 26px;
+  margin-top: 33px;
+  margin-bottom: 51px;
+  color: #333;
+  display: inline-block;
+  text-align: center;
 }
 
+/*
 .features-list.reason1 {
   align-items: flex-start;
 }
 
 .features-list.reason5 {
   align-items: flex-end;
+} */
+/* Причины */
+.features-list {
+  display: flex;
+  /* flex-direction: row; */
+  flex-wrap: wrap;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  min-width: 1200px;
 }
 
 /*Там есть  Мост дьявола*/
 h2 {
   font-size: 21px;
   font-weight: bold;
-  padding: 0;
-  margin: 0;
+  /* margin: 0; */
+  /* padding-top: 43px; */
+}
+
+.feature-item {
+  /* text-align: center; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 400px;
+  min-height: 256px;
 }
 
 /*Акцентировать голубой фон только на Wide. Без вложенного списка */
 .feature-item.wide {
-  color: #ffffff;
+  color: #fff;
   background-color: #81b3d2;
-  min-height: 162.5px;
-  width: 310px;
-  margin-top: 41.5px;
-  margin-bottom: 52px;
-  margin-left: 18px;
-  margin-right: 72px;
+}
+
+.feature-item.grey {
+  background-color: #eeeeee;
 }
 
 /*Седона - не аттракцион для туристов, там течёт своя жизнь<*/
@@ -183,51 +209,62 @@ h2 {
   font-size: 14px;
 }
 
+/*Скрыл изображение через display: none; */
 .city {
+  display: none;
+  overflow: hidden;
   width: 800px;
   height: 256px;
-  overflow: hidden;
 }
 
+/*Скрыл изображение через display: none; */
 .bridge {
+  display: none;
+  overflow: hidden;
   width: 800px;
   height: 256px;
-  overflow: hidden;
 }
 
+/* .advantages-container {
+  display: block;
+  min-height: 330px;
+  width: 1200px;
+} */
 .advantages-list {
-  list-style: none;
   line-height: 1.5;
-  color: #000000;
-  background-color: #ffffff;
+  display: flex;
   margin: 0;
   padding: 0;
+  list-style: none;
+  color: #000;
+  background-color: #fff;
 }
 
 .advantages-item {
+  display: inline-block;
   margin: 0;
   padding: 0;
 }
 
 /*Жильё*/
 .advantages-item.house {
-  background-image: url("../img/house-icon.svg");
   width: 75px;
   height: 72px;
+  background-image: url("../img/house-icon.svg");
 }
 
 /*Еда*/
 .advantages-item.food {
-  background-image: url("../img/food-icon.svg");
   width: 75px;
   height: 70px;
+  background-image: url("../img/food-icon.svg");
 }
 
 /*Сувениры*/
 .advantages-item.souvenirs {
-  background-image: url("../img/souvenirs-icon.svg");
   width: 64px;
   height: 76px;
+  background-image: url("../img/souvenirs-icon.svg");
 }
 
 .advantages-item {
@@ -239,11 +276,31 @@ h2 {
   font-size: 14px;
   font-weight: normal;
   line-height: 24px;
-  color: #333333;
+  color: #333;
 }
 
-.order {
+.order-container {
+  margin-top: 55px;
+  margin-bottom: 35px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: space-between;
   font-weight: bold;
+  width: 464px;
+  min-height: 115px;
+}
+
+*/
+.appoiment-item-container {
+  display: inline-flex;
+  width: 568px;
+  min-height: 395px;
+  align-items: center;
+}
+.appoiment-item {
+  display: flex;
+  justify-content: center;
+
 }
 
 /*Заинтересовались?*/
@@ -254,37 +311,41 @@ h2 {
 /*Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне*/
 .order-info {
   font-size: 14px;
-  line-height: 1.71;
   font-weight: normal;
-  padding: 0;
+  line-height: 1.71;
   margin: 0;
+  padding: 0;
 }
 
 /*Поиск гостиницы в Седоне*/
 .hotel-search {
   font-size: 21px;
   line-height: 1.24;
-  color: #ffffff;
+  color: #fff;
   background-color: #766357;
+  width: 568px;
+  min-height: 86px;
+  margin-top: 35px;
 }
 
 .hotel-search:hover {
-  background-color: #604e43
+  background-color: #604e43;
 }
 
 .hotel-search:active {
-  background-color: #503e33;
-  color: #ffffff;
+  color: #fff;
   color: rgba(255, 255, 255, 0.3);
+  background-color: #503e33;
 }
 
 /*Дата заезда; дата выезда, взрослые, дети*/
 .appoiment-item.half-width {
   font-size: 14px;
-  line-height: 1.86
+  line-height: 1.86;
 }
 
-input, button {
+button,
+input {
   outline: none;
 }
 
@@ -293,23 +354,23 @@ input, button {
 }
 
 .field-input {
-  background-color: #f2f2f2;
   font-weight: bold;
+  background-color: #f2f2f2;
 }
 
 .field-input:hover {
-  background-color: #EBEBEB;
+  background-color: #ebebeb;
 }
 
 .field-input:focus {
-  background-color: #FFFFFF;
+  background-color: #fff;
 }
 
 /*Найти. Убрать стандартную обводку*/
 .find {
   font-size: 21px;
   line-height: 1.24;
-  color: #ffffff;
+  color: #fff;
   background-color: #81b3d2;
 }
 
@@ -319,71 +380,69 @@ input, button {
 
 /*Что-то с прозрачностью*/
 .find:active {
-  background-color: #5496bd;
   color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
 }
 
 .calendar svg {
-  fill: #a9a9a9;
   font-size: 0;
+  fill: #a9a9a9;
 }
 
 .calendar:hover svg {
-  fill: #000000;
+  fill: #000;
 }
 
 .calendar:active svg {
-  fill: #81B3D2;
+  fill: #81b3d2;
 }
 
+/*Скрыл изображение через display: none; */
 .map {
+  display: none;
+  overflow: hidden;
   width: 1200px;
   height: 597px;
-  overflow: hidden;
-}
-
-.footer-social {
-  list-style: none;
 }
 
 /*  .social-link {} */
 .twitter {
   display: block;
   background-image: url("../img/twitter-icon.svg");
-  width: 46px;
-  height: 48px;
-  font-size: 0;
 }
 
 .facebook {
   display: block;
   background-image: url("../img/facebook-icon.svg");
-  width: 47px;
-  height: 48px;
-  font-size: 0;
-}
-
-.twitter, .facebook, .youtube {
-  background-color: #81b3d2;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.twitter:hover, .facebook:hover, .youtube:hover {
-  background-color: #669EC0;
-}
-
-.twitter:active, .facebook:active, .youtube:active {
-  background-color: #5496BD;
-  color: #87B5D0;
 }
 
 .youtube {
   display: block;
   background-image: url("../img/youtube-icon.svg");
+}
+
+.facebook,
+.twitter,
+.youtube {
+  font-size: 0;
   width: 46px;
   height: 48px;
-  font-size: 0;
+  background-color: #81b3d2;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.facebook:hover,
+.twitter:hover,
+.youtube:hover {
+  background-color: #669ec0;
+}
+
+.facebook:active,
+.twitter:active,
+.youtube:active {
+  color: #87b5d0;
+  background-color: #5496bd;
 }
 
 /*holels.html*/
@@ -391,33 +450,36 @@ input, button {
   list-style: none;
 }
 
-.more, .less {
-  color: #A9A9A9;
-  border: 0
+.less,
+.more {
+  color: #a9a9a9;
+  border: 0;
 }
 
-.more:hover, .less:hover {
-  color: #000000;
+.less:hover,
+.more:hover {
+  color: #000;
 }
 
-.more:active, .less:active {
-  color: #81B3D2;
+.less:active,
+.more:active {
+  color: #81b3d2;
 }
 
 .reservation {
-  color: #ffffff;
-  background-color: #766357;
   font-weight: bold;
   line-height: 1.5;
+  color: #fff;
+  background-color: #766357;
 }
 
 .reservation:hover {
-  background-color: #604E43;
+  background-color: #604e43;
 }
 
 .reservation:active {
-  background-color: #503E33;
   color: rgba(255, 255, 255, 0.3);
+  background-color: #503e33;
 }
 
 h3 {
@@ -429,12 +491,12 @@ h3 {
   font-size: 21px;
   line-height: 26px;
   line-height: 1.24;
-  color: #000000;
   text-decoration: none;
+  color: #000;
 }
 
 .hotel-title:hover a {
-  color: #81B3D2;
+  color: #81b3d2;
 }
 
 .hotel-title:active a {
@@ -442,25 +504,25 @@ h3 {
 }
 
 .detail {
-  color: #FFFFFF;
-  background-color: #81B3D2;
   font-weight: bold;
   line-height: 1.5;
+  color: #fff;
+  background-color: #81b3d2;
 }
 
 .detail:hover {
-  background-color: #669EC0;
+  background-color: #669ec0;
 }
 
 .detail:active {
-  background-color: #5496BD;
   color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
 }
 
 .text {
-  background-color: #f2f2f2;
-  color: #666666;
   line-height: 1.5;
+  color: #666;
+  background-color: #f2f2f2;
 }
 
 .visually-hidden {
@@ -468,8 +530,8 @@ h3 {
 }
 
 .stars {
-  color: #666666;
   font-size: 0;
+  color: #666;
   background-color: #f2f2f2;
   background-image: url("../img/star.svg");
   background-repeat: space;
@@ -491,19 +553,52 @@ h3 {
   font-weight: bold;
 }
 
-.house-type, .price {
-  color: #333333
+.house-type,
+.price {
+  color: #333;
 }
 
 .footer-copyright svg {
-  fill: #a9a9a9;
   font-size: 0;
+  fill: #a9a9a9;
 }
 
 .footer-copyright:hover svg {
-  fill: #000000;
+  fill: #000;
 }
 
 .footer-copyright:active svg {
-  fill: #81B3D2;
+  fill: #81b3d2;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+}
+
+.hashtag {
+  width: 166px;
+  min-height: 26px;
+  margin-right: 241px;
+  margin-left: 117px;
+}
+
+.footer-social {
+  display: flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 150px;
+  min-height: 48px;
+  padding: 0;
+  list-style: none;
+}
+
+.link {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  width: 219px;
+  margin: 0 101px 0 213px;
+  text-align: center;
 }
