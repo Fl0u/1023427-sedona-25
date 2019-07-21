@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="3px" viewBox="0 0 12 3" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title></title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect x="280" y="1653" width="12" height="3" id="rect-1"></rect>
+    </defs>
+    <g id="Styleguide" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-280.000000, -1653.000000)" id="">
+            <g>
+                <image x="280" y="1653" width="12" height="3" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAADCAYAAACnI+4yAAABc2lDQ1BJQ0MgUHJvZmlsZQAAKJF9kE0rRGEUx38zTCNGFiTJ4pbBBnkpsWMspCw0KIPNnTuvNXPnducK2SobC2UhNt4WvoDYKmuliJRsfANiI13nmRmNl3LqdH6d55zznPMHb1C3rExlD2RNxw6PhbTZyJzmf8KPj0a66NCNvDUyOTmB2Ff8aW+3eFS87lKz/r7/azWxeN4AT5XwgGHZjvCwcOuSYymOCTfYspTwsuJkkTcUR4u8X6iZDo8KnwhrRkqXPs+NcKeRsrPgVX8Fo99qkt84m1k0SvuoSwJxc2ZKYrN4C3nCjBFCI8oiaTI4oksaE5z4sqOaRnPWip1OphxtRBSIa+Om0d2p9fX0DoHS87dO5VxOdh98hYrNci66DWfr0HRfzgX3oG4NTi8s3dYLqQpxbyIBz8dQG4H6K6iezyf6+4qXBELge3Tdlzbwb8HHpuu+H7jux6E0P8C5WdSmNIujO5hehYlL2NmFdpldt/AJxRdnYy5oifAAAAAjSURBVAgdY1y5cmUoAwPDKiAmBoQxAVUpEaMSqkYJpIEkAADhsQOarGNGVwAAAABJRU5ErkJggg=="></image>
+                <use fill-opacity="0" fill="#000000" fill-rule="evenodd" xlink:href="#rect-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

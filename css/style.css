@@ -34,35 +34,34 @@ a {
   color: #766357;
 }
 
-.page-header {
+/* .page-header {
   margin-bottom: 109px;
-}
-
+} */
 .main-navigation {
   color: #000000;
   display: flex;
-  font-size: 14px;
   line-height: 26px;
 }
 
 .site-navigation {
   display: flex;
-  align-items: center;
   font-weight: bold;
   list-style: none;
   width: 100%;
   padding: 0 57px;
   height: 56px;
+  margin: 0;
 }
 
 .item {
   width: 25%;
-  min-height: 56px;
   text-align: left;
+  display: flex;
+  align-items: center;
 }
 
 .item.right {
-  text-align: right;
+  justify-content: flex-end;
 }
 
 .item a {
@@ -77,43 +76,39 @@ a {
   color: #b2b2b2b2;
 }
 
-/* .logo-container {
-  width: 244px;
-  height: 56px;
-} */
 .logo {
-  margin: 0 53px;
   position: absolute;
-  left: 502px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .promo {
-  width: 1200px;
+  position: relative;
   height: 800px;
   background-image: url("../img/bg.jpg");
   background-position: top center;
-  /* border: solid 1px #b36565; */
-  margin-top: 76px;
-  margin-bottom: 139px;
+  padding-top: 76px;
+  margin-bottom: 57px;
+  box-sizing: border-box;
 }
 
-/* После фона вставить картинку page-wrapper */
-h1 {
-  visibility: hidden;
+.promo::after {
+  content: "";
+}
+
+.polygon {
+  position: absolute;
+  transform: translateY(-141px);
 }
 
 /*Седона - небольшой городок в Аризоне, заслуживающий большего*/
 .about-description {
+  width: 470px;
   font-size: 21px;
   font-weight: bold;
   line-height: 1.24;
-  display: inline-block;
-  width: 470px;
-  min-height: 48px;
-  margin-top: 139px;
-  margin-bottom: 33px;
+  margin: 0 auto 33px;
   padding: 0;
-  text-align: center;
 }
 
 /*Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!*/
@@ -132,12 +127,10 @@ h1 {
 .about-features {
   font-size: 14px;
   line-height: 1.86;
-  width: 519px;
   min-height: 26px;
-  margin-top: 33px;
+  margin-top: 0;
   margin-bottom: 51px;
   color: #333333;
-  display: inline-block;
   text-align: center;
 }
 
@@ -153,17 +146,14 @@ h1 {
 }
 
 /*Там есть  Мост дьявола*/
-h2 {
+.feature-name {
   font-size: 21px;
   font-weight: bold;
-  /* margin: 0; */
-  /* padding-top: 43px; */
 }
 
-.feature-item {
+/* .feature-item {
   min-height: 256px;
-}
-
+} */
 /*Акцентировать голубой фон только на Wide. Без вложенного списка */
 .feature-item.wide {
   display: flex;
@@ -172,9 +162,15 @@ h2 {
   background-color: #81b3d2;
 }
 
+.reverse {
+  flex-direction: row-reverse;
+}
+
 .feature-item.grey {
   width: 400px;
   background-color: #eeeeee;
+  padding-top: 43px;
+  padding-bottom: 46px;
 }
 
 .info-wrap {
@@ -187,7 +183,6 @@ h2 {
 }
 
 .img-wrap {
-  /* overflow: hidden; */
   width: 800px;
   height: 256px;
 }
@@ -209,14 +204,12 @@ h2 {
 
 .advantages-item {
   font-size: 21px;
-  /* box-sizing: border-box; */
   width: 400px;
   font-weight: bold;
-  margin-top: 60px;
-  padding-top: 100px;
+  padding-top: 160px;
   padding-bottom: 85px;
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: center 50px;
 }
 
 .advantages-item.house {
@@ -254,6 +247,11 @@ h2 {
   display: flex;
   background-color: purple;
   flex-wrap: wrap;
+  position: absolute;
+}
+
+.order-form label[for="adults"] {
+  margin-right: 38px;
 }
 
 .appoiment-item {
@@ -261,6 +259,17 @@ h2 {
   font-weight: bold;
   line-height: 1.86;
   flex-basis: 100%;
+  position: relative;
+  align-items: center;
+}
+
+.appoiment-item.children {
+  padding-left: 48px;
+  box-sizing: border-box;
+}
+
+.appoiment-item:not(.half-width) {
+  margin-bottom: 30px;
 }
 
 /*Заинтересовались?*/
@@ -280,10 +289,12 @@ h2 {
 .hotel-search-form {
   width: 568px;
   margin: 0 auto;
+  position: relative;
 }
 
 /*Поиск гостиницы в Седоне*/
 .hotel-search {
+  font-weight: bold;
   font-size: 21px;
   line-height: 1.24;
   color: #fff;
@@ -311,12 +322,60 @@ h2 {
   flex-basis: 50%;
 }
 
+.appoiment-item label {
+  margin-right: auto;
+}
+
 button,
 input {
   outline: none;
 }
 
-.formClass input::-webkit-input-placeholder {
+input#arrival::-webkit-input-placeholder {
+  color: black;
+}
+
+input#arrival::-moz-placeholder {
+  color: black;
+}
+
+input#arrival:-ms-input-placeholder {
+  color: black;
+}
+
+input#departure::-webkit-input-placeholder {
+  color: black;
+}
+
+input#departure::-moz-placeholder {
+  color: black;
+}
+
+input#departure:-ms-input-placeholder {
+  color: black;
+}
+
+input#adults::-webkit-input-placeholder {
+  color: black;
+}
+
+input#adults::-moz-placeholder {
+  color: black;
+}
+
+input#adults:-ms-input-placeholder {
+  color: black;
+}
+
+input#children::-webkit-input-placeholder {
+  color: black;
+}
+
+input#children::-moz-placeholder {
+  color: black;
+}
+
+input#children:-ms-input-placeholder {
   color: black;
 }
 
@@ -328,6 +387,7 @@ input {
   padding: 0;
   border: 0;
   padding-left: 13px;
+  box-sizing: border-box;
 }
 
 .field-input.half-width {
@@ -354,6 +414,7 @@ input {
   width: 458px;
   height: 58px;
   margin-top: 54px;
+  border: 0;
 }
 
 .find:hover {
@@ -368,6 +429,11 @@ input {
 
 .calendar {
   position: absolute;
+  background-color: #ffffff00;
+  border: 0;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .calendar svg {
@@ -385,10 +451,10 @@ input {
 
 /*Скрыл изображение через display: none; */
 .map {
-  display: none;
   overflow: hidden;
   width: 1200px;
   height: 597px;
+  margin-bottom: -120px;
 }
 
 /*  .social-link {} */
@@ -436,7 +502,9 @@ input {
   color: #a9a9a9;
   border: 0;
   width: 38px;
+  height: 38px;
   padding: 0;
+  font-size: 27px;
 }
 
 .less:hover,
@@ -455,7 +523,12 @@ input {
   color: #fff;
   background-color: #766357;
   width: 142px;
-  height: 27px;
+  display: flex;
+  justify-content: center;
+  height: 17px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
 }
 
 .reservation:hover {
@@ -470,6 +543,7 @@ input {
 h3 {
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 
 .detail {
@@ -478,7 +552,12 @@ h3 {
   color: #ffffff;
   background-color: #81b3d2;
   width: 110px;
-  height: 27px;
+  display: flex;
+  justify-content: center;
+  height: 17px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: center;
 }
 
 .detail:hover {
@@ -494,11 +573,14 @@ h3 {
   color: #666666;
   background-color: #f2f2f2;
   width: 110px;
-  height: 27px;
+  height: 17px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
-.visually-hidden {
-  font-size: 0;
+.hidden {
+  visibility: hidden;
+  margin: 0;
 }
 
 .stars {
@@ -511,18 +593,17 @@ h3 {
 
 .stars.four {
   width: 80px;
+  margin-left: 32px;
 }
 
 .stars.three {
   width: 60px;
+  margin-left: 50px;
 }
 
 .stars.two {
   width: 40px;
-}
-
-.hashtag {
-  font-weight: bold;
+  margin-left: 70px;
 }
 
 .house-type,
@@ -543,26 +624,31 @@ h3 {
   fill: #81b3d2;
 }
 
-.footer-container {
+.page-footer {
+  position: relative;
   display: flex;
   align-items: center;
+  padding-left: 117px;
+  padding-right: 101px;
+  height: 120px;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .hashtag {
   width: 166px;
-  min-height: 26px;
-  margin-right: 241px;
-  margin-left: 117px;
+  font-size: 21px;
+  font-weight: bold;
+  height: 26px;
+  text-align: left;
 }
 
 .footer-social {
-  display: flex;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 150px;
   min-height: 48px;
-  padding: 0;
+  padding-left: 241px;
   list-style: none;
 }
 
@@ -571,15 +657,34 @@ h3 {
   flex-direction: column-reverse;
   justify-content: center;
   width: 219px;
-  margin: 0 101px 0 213px;
+  margin: 0 0 0 213px;
   text-align: center;
+}
+
+.link p {
+  display: flex;
+  align-items: center;
+}
+
+.link a {
+  margin-left: 10px;
 }
 
 /*holels.html*/
 .catalog-list,
-.item-result {
+.left-col {
   list-style: none;
   padding: 0;
+}
+
+.left-col {
+  width: 110px;
+  margin-right: 9px;
+}
+
+.right-col {
+  width: 142px;
+  margin-right: 500px;
 }
 
 .catalog-list {
@@ -588,21 +693,17 @@ h3 {
 
 .info {
   display: flex;
-  flex-direction: column;
+  margin-left: 30px;
+  flex-wrap: wrap;
 }
 
-/* .info-wrap {
-display: flex;
-  justify-content: space-between;
-} */
 .catalog-item {
   display: flex;
-  justify-content: space-between;
-  padding: 0 72px;
+  padding: 30px 72px;
 }
 
 .rating {
-  /* text-align: right; */
+  text-align: center;
 }
 
 .hotel-title a {
@@ -620,7 +721,134 @@ display: flex;
   color: rgba(178, 178, 178, 0.3);
 }
 
-/* .item-star {
-  display: flex;
-  align-content: space-around;
-} */
+.filter-range {
+  width: 330px;
+  margin: 50px auto; /* для демо */
+
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.filter-range-title {
+  margin-bottom: 9px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.price-controls {
+  position: relative;
+
+  height: 36px;
+  margin-bottom: 20px;
+
+  font-size: 0;
+
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 2px;
+  height: 22px;
+
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 38px;
+  vertical-align: top;
+
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+
+  font-size: 14px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
